@@ -1,0 +1,9 @@
+{
+  "name": "workspaces-demo",
+  "private": true,
+  "workspaces": [
+    "services/api/*",
+    "services/event-driven/*",
+    "packages/javascript/*"
+  ]
+}
