@@ -26,6 +26,7 @@ jobs:
       - name: Set Serverless License Key
         run: |
           export SERVERLESS_LICENSE_KEY=${{ secrets.SERVERLESS_LICENSE_KEY_GITHUB_ACTIONS }}
+          echo "SERVERLESS_LICENSE_KEY=$SERVERLESS_LICENSE_KEY" >> $GITHUB_ENV
 
       # TODO: update working directory here!
       - name: Install dependencies (workspace root)
